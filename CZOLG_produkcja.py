@@ -84,8 +84,8 @@ class Czolg():
     def zmien_pancerz(self,a):
         self.pancerz.zmien(a)
 
-    def zmien_cena(self,a):
-        self.cena.zmien(a)
+    def zmien_cena(self,a)
+        self.cena=a
 
     
 
