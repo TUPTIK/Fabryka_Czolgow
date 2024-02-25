@@ -1,4 +1,3 @@
-
 class Dzialo:
     def __init__(self,kaliber) -> None:
         self.kaliber = kaliber
@@ -21,30 +20,30 @@ class Silnik:
 
 class Zawieszenie:
     def __init__(self,wysokość_zawieszenia) -> None:
-        self.wysokość_zawieszenia = wysokość_zawieszenia
+        self.wysokosc_zawieszenia = wysokosc_zawieszenia
     
     def zmien(self, nowe_zawieszenie):
-        self.wysokość_zawieszenia = nowe_zawieszenie
+        self.wysokosc_zawieszenia = nowe_zawieszenie
 
     def inf(self):
-        print(self.wysokość_zawieszenia)
+        print(self.wysokosc_zawieszenia)
 
 class Wieza:
     def __init__(self,predkość_obrotu) -> None:
-        self.prędkość_obrotu = predkość_obrotu
+        self.predkosc_obrotu = predkosc_obrotu
     
     def zmien(self,nowa_predkość):
-        self.nowa_predkość = nowa_predkość
+        self.nowa_predkosc = nowa_predkosc
 
     def inf(self):
         print(self.wieza)
 
 class Pancerz:
     def __init__(self,grubość) -> None:
-        self.grubość = grubość
+        self.grubosc = grubosc
     
     def zmien(self,nowa_grubość):
-        self.nowa_grubość = nowa_grubość
+        self.nowa_grubosc = nowa_grubosc
 
     def inf(self):
         print(self.pancerz)
@@ -61,14 +60,16 @@ class Czolg():
         Czolg.ilosc += 1
         self.numer_seryjny = Czolg.ilosc
 
-    # def inf(self):
-    #     self.elm1.inf1()
-    #     self.elm2.inf2()
-    #     self.elm3.inf3()
+    def inf(self):
+        self.dzialo.inf()
+        self.silnik.inf()
+        self.zawieszenie.inf()
+        self.wieza.inf()
+        self.pancerz.inf()
+        print(self.cena)
+        print(self.numer_seryjny)
     
     # def zmien(self):
     #     self.elm1.zmien1()
     #     self.elm2.zmien2()
     #     self.elm3.zmien3()
-
-
