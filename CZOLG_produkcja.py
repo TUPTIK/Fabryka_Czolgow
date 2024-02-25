@@ -69,7 +69,24 @@ class Czolg():
         print(self.cena)
         print(self.numer_seryjny)
     
-    # def zmien(self):
-    #     self.elm1.zmien1()
-    #     self.elm2.zmien2()
-    #     self.elm3.zmien3()
+    def zmien_dzialo(self,a):
+        self.dzialo.zmien(a)
+
+    def zmien_silnik(self,a):
+        self.silnik.zmien(a)
+
+    def zmien_zawieszenie(self,a):
+        self.zawieszenie.zmien(a)
+
+    def zmien_wieza(self,a):
+        self.wieza.zmien(a)
+
+    def zmien_pancerz(self,a):
+        self.pancerz.zmien(a)
+
+    def zmien_cena(self,a):
+        self.cena.zmien(a)
+
+    
+
+    
