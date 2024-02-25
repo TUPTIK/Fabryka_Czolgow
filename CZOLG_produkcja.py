@@ -19,7 +19,7 @@ class Silnik:
         print(self.moc)
 
 class Zawieszenie:
-    def __init__(self,wysokość_zawieszenia) -> None:
+    def __init__(self,wysokosc_zawieszenia) -> None:
         self.wysokosc_zawieszenia = wysokosc_zawieszenia
     
     def zmien(self, nowe_zawieszenie):
@@ -29,20 +29,20 @@ class Zawieszenie:
         print(self.wysokosc_zawieszenia)
 
 class Wieza:
-    def __init__(self,predkość_obrotu) -> None:
+    def __init__(self,predkosc_obrotu) -> None:
         self.predkosc_obrotu = predkosc_obrotu
     
-    def zmien(self,nowa_predkość):
+    def zmien(self,nowa_predkosc):
         self.nowa_predkosc = nowa_predkosc
 
     def inf(self):
         print(self.wieza)
 
 class Pancerz:
-    def __init__(self,grubość) -> None:
+    def __init__(self,grubosc) -> None:
         self.grubosc = grubosc
     
-    def zmien(self,nowa_grubość):
+    def zmien(self,nowa_grubosc):
         self.nowa_grubosc = nowa_grubosc
 
     def inf(self):
