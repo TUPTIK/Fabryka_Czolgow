@@ -1,3 +1,5 @@
+import Fabryka_Czolgow
+
 class Magazyn:
     def __init__(self, cena) -> None:
         self.magazyn = []
@@ -5,11 +7,11 @@ class Magazyn:
         self.cena = cena
 
     def doaj_czolg_do_magazynu(self):
-        self.magazyn.append(Czolg(self.cena))
+        self.magazyn.append(Fabryka_Czolgow.Czolg(self.cena))
     
     
     def dodaj_czolg_na_sprzedarz(self):
-        self.magazyn.append(Czolg(self.cena))
+        self.magazyn.append(Fabryka_Czolgow.Czolg(self.cena))
     
     def usun_czolg_z_magazynu(self, a):
         self.magazyn.remove(self.magazyn[a])
@@ -23,12 +25,7 @@ class Magazyn:
 
 
 
-class Czolg:
-    def __init__(self, _cena) -> None:
-        self.cena = _cena
 
-    def zmien_cene(self, nowa_cena):
-        self.cena = nowa_cena
 
     def inf(self):
         print(self.cena)
